@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>SmilePlus Dental Clinic and Implant Center</title>
+  <meta name="description" content="SmilePlus Dental Clinic and Implant Center - Dr. Ronak Dewani.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="header">
+    <div class="brand">
+      <img src="assets/logo.png" alt="logo">
+      <div style="line-height:1">
+        <h1 style="margin:0">SmilePlus Dental Clinic</h1>
+        <div style="font-size:12px;color:var(--muted)">Dr. Ronak Dewani, BDS</div>
+      </div>
+    </div>
+    <div class="nav">
+      <a href="javascript:scrollToSection('about')">About</a>
+      <a href="javascript:scrollToSection('treatments')">Treatments</a>
+      <a href="javascript:scrollToSection('reviews')">Reviews</a>
+      <a class="btn primary" href="javascript:bookWhatsApp()">Book Appointment</a>
+    </div>
+  </div>
+
+  <section class="hero-full" style="background-image:url('assets/hero.jpg')">
+    <div class="hero-overlay">
+      <h2>SmilePlus Dental Clinic and Implant Center</h2>
+      <p style="margin:6px 0 18px">Advanced Dental Care with a Gentle Touch</p>
+      <p>
+        <a class="btn primary" href="javascript:bookWhatsApp()">Book Appointment</a>
+        <a class="btn secondary" href="mailto:ddr.ronak@yahoo.com">Email Us</a>
+      </p>
+    </div>
+  </section>
+
+  <div class="container">
+    <section id="about" class="card">
+      <h3 style="color:var(--gold);margin-top:0">About Dr. Ronak Dewani</h3>
+      <p><strong>Dr. Ronak Dewani</strong> (BDS) is a Root Canal Specialist and Implantologist dedicated to delivering painless, modern dental care.</p>
+    </section>
+
+    <section id="treatments" class="card">
+      <h3 style="color:var(--gold);margin-top:0">Our Treatments</h3>
+      <div class="grid">
+        <div class="treatment"><h4>Root Canal Treatment (RCT)</h4><p>Comfortable, microscope-assisted RCT for predictable results.</p></div>
+        <div class="treatment"><h4>Dental Implants</h4><p>Single and multiple tooth implants with precise planning.</p></div>
+        <div class="treatment"><h4>Cleaning & Scaling</h4><p>Professional hygiene and periodontal maintenance.</p></div>
+        <div class="treatment"><h4>Smile Design</h4><p>Cosmetic options including veneers and whitening.</p></div>
+        <div class="treatment"><h4>Tooth Extraction</h4><p>Simple and surgical extractions with comfortable protocols.</p></div>
+        <div class="treatment"><h4>Wisdom Tooth Surgery</h4><p>Impacted wisdom tooth removal with postoperative care.</p></div>
+        <div class="treatment"><h4>Dentures</h4><p>Partial and complete dentures for functional and aesthetic results.</p></div>
+      </div>
+    </section>
+
+    <section id="reviews" class="card">
+      <h3 style="color:var(--gold);margin-top:0">What Our Patients Say</h3>
+      <p style="margin:0 0 10px 0;color:var(--muted)">Live Google Reviews below. To activate, paste your Elfsight widget script into the file where indicated.</p>
+      <!-- ELFSIGHT_WIDGET -->
+      <div style="margin-top:12px"><a target="_blank" href="https://g.page/r/CZ_2i4drLOxCEBE/review">View reviews on Google</a></div>
+    </section>
+
+    <section id="gallery" class="card">
+      <h3 style="color:var(--gold);margin-top:0">Gallery</h3>
+      <div class="gallery">
+        <img src="assets/clinic1.jpg" alt="clinic photo 1">
+        <img src="assets/clinic2.jpg" alt="clinic photo 2">
+        <img src="assets/clinic3.jpg" alt="clinic photo 3">
+      </div>
+    </section>
+
+    <section id="contact" class="card">
+      <h3 style="color:var(--gold);margin-top:0">Contact & Appointment</h3>
+      <div class="contact-columns">
+        <div>
+          <p>Prefer WhatsApp? Click below to message us directly.</p>
+          <p style="margin-top:8px">
+            <a class="btn primary" href="https://wa.me/91972476002" target="_blank">Message on WhatsApp</a>
+            <a class="btn secondary" href="mailto:ddr.ronak@yahoo.com">Email: ddr.ronak@yahoo.com</a>
+          </p>
+
+          <hr style="margin:14px 0;border:none;border-top:1px dashed rgba(0,0,0,0.06)">
+
+          <h4 style="margin:8px 0 6px">Quick Appointment Form</h4>
+          <form id="appt-form" onsubmit="makeAppointment(event)">
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px">
+              <input required placeholder="Full name" id="name" style="padding:10px;border-radius:8px;border:1px solid #e6dfd6">
+              <input required placeholder="Phone" id="phone" style="padding:10px;border-radius:8px;border:1px solid #e6dfd6">
+            </div>
+            <input placeholder="Preferred date / time" id="datetime" style="padding:10px;border-radius:8px;border:1px solid #e6dfd6;margin-top:8px;width:100%">
+            <textarea id="notes" placeholder="Brief message / concern" style="padding:10px;border-radius:8px;border:1px solid #e6dfd6;margin-top:8px;width:100%"></textarea>
+            <div style="margin-top:8px">
+              <button class="btn primary" type="submit">Send via WhatsApp</button>
+              <button class="btn secondary" type="button" onclick="sendEmail()">Send via Email</button>
+            </div>
+          </form>
+        </div>
+
+        <aside class="map">
+          <iframe src="https://maps.google.com/maps?q=1st%20floor%20Raheman%20Plaza%20Beside%20Shabina%20Shopping%20Center%20Bhalej%20Road%20Anand%20Gujarat%20388001&output=embed" loading="lazy"></iframe>
+        </aside>
+      </div>
+    </section>
+
+    <footer>
+      <div>© <strong>SmilePlus Dental Clinic and Implant Center</strong> — 1st floor Raheman Plaza, Anand • Phone/WhatsApp: +91 97247 6002</div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
